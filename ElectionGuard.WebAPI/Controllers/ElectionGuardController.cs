@@ -42,6 +42,7 @@ namespace ElectionGuard.WebAPI.Controllers
         private static string _registeredBallotsExportFileNamePrefix = null;
         private static string _tallyExportFileNamePrefix = null;
 
+
         public ElectionGuardController(ILogger<ElectionGuardController> logger, IElectionMapper<Election, Ballot, VoteTally> electionMapper, IConfigFileService configService)
         {
             _config = configService;

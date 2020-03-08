@@ -6,24 +6,13 @@
         "1"
       ],
       "districts": [
-        "1",
-        "2"
-      ]
-    },
-    {
-      "id": "2",
-      "precincts": [
         "1"
-      ],
-      "districts": [
-        "1",
-        "3"
       ]
     }
   ],
   "county": {
     "id": "1",
-    "name": "Franklin County"
+    "name": "Boulder County"
   },
   "parties": [
     {
@@ -52,14 +41,6 @@
     {
       "id": "1",
       "name": "State Of Hamilton"
-    },
-    {
-      "id": "2",
-      "name": "Referenda"
-    },
-    {
-      "id": "3",
-      "name": "Franklin School District"
     }
   ],
   "contests": [
@@ -67,75 +48,39 @@
       "seats": 1,
       "candidates": [
         {
-          "id": "laurel-clark",
-          "name": "Laurel Clark",
+          "id": "roscoe",
+          "name": "Timothy Roscoe",
           "partyId": "0"
         },
         {
-          "id": "les-paul",
-          "name": "Les Paul",
+          "id": "wattenhofer",
+          "name": "Roger Wattenhofer",
           "partyId": "0"
         },
         {
-          "id": "georgia-okeeffe",
-          "name": "Georgia O'Keeffe",
+          "id": "maurer",
+          "name": "Ueli Maurer",
           "partyId": "0"
         }
       ],
-      "allowWriteIns": true,
-      "id": "justice-supreme-court",
+      "allowWriteIns": false,
+      "id": "president",
       "districtId": "1",
       "section": "Judicial",
-      "title": "Justice of the Supreme Court",
+      "title": "Präsident ETH Zürich",
       "type": "Candidate"
     },
     {
-      "description": "Should the State of Hamilton purchase, from the State of Michigan, the Upper Peninsula, for the purchase price of $1 Billion?",
-      "id": "referendum-michigan-up",
-      "districtId": "2",
+      "description": "Should the tuition fees be increased at ETHZ?",
+      "id": "tuition",
+      "districtId": "1",
       "section": "Referenda",
-      "title": "Proposition M: The Michigan Question",
+      "title": "This is a Yes/No Question",
       "type": "YesNo"
-    },
-    {
-      "seats": 2,
-      "candidates": [
-        {
-          "id": "jim-lovell",
-          "name": "Jim Lovell",
-          "partyId": "0"
-        },
-        {
-          "id": "william-rehnquist",
-          "name": "William Rehnquist",
-          "partyId": "0"
-        },
-        {
-          "id": "debbie-mccormick",
-          "name": "Debbie McCormick",
-          "partyId": "0"
-        },
-        {
-          "id": "clyde-stubblefield",
-          "name": "Clyde Stubblefield",
-          "partyId": "0"
-        },
-        {
-          "id": "frank-lloyd-wright",
-          "name": "Frank Lloyd Wright",
-          "partyId": "0"
-        }
-      ],
-      "allowWriteIns": true,
-      "id": "milton-school-board",
-      "districtId": "3",
-      "section": "Franklin School District",
-      "title": "School Board Member",
-      "type": "Candidate"
     }
   ],
-  "date": "February 6th, 2020",
-  "sealUrl": "/seals/Franklin-County-Seal-Color.svg",
-  "state": "State of Hamilton",
-  "title": "Spring Primary"
+  "date": "March 5th, 2020",
+  "sealUrl": "/seals/Seal_of_Wisconsin.svg",
+  "state": "Canton of Zurich",
+  "title": "ETHZ Primary"
 }

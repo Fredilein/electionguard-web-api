@@ -25,6 +25,16 @@ namespace ElectionGuard.WebAPI
                     .AddNewtonsoftJson();
             services.AddTransient<IElectionMapper<Election, Ballot, VoteTally>, VotingWorksMapper>();
             services.AddSingleton<IConfigFileService, ConfigFileService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllHeaders",
+                        builder =>
+                    {
+                            builder.AllowAnyOrigin()
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                        });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +50,8 @@ namespace ElectionGuard.WebAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("AllowAllHeaders");
 
             app.UseEndpoints(endpoints =>
             {
